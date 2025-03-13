@@ -60,7 +60,6 @@ let result = add(five, ten);`
 
 	for i, tt := range tests {
 		tok := l.NextToken()
-    t.Log(tok)
 		if tok.Type != tt.expectedType {
 			t.Fatalf("test[%d] - tokentype wrong, expected=%q, got=%q",
 				i, tt.expectedType, tok.Type)
